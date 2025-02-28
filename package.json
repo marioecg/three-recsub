@@ -9,7 +9,6 @@
     "author": "marioecg",
     "license": "MIT",
     "dependencies": {
-        "simplex-noise": "^4.0.3",
         "three": "^0.173.0"
     }
 }
