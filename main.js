@@ -49,7 +49,6 @@ function init() {
 
     for (let i = 0; i < count; i += 3) {
         let val = Math.random()
-
         randomIndexArray[i + 0] = val
         randomIndexArray[i + 1] = val
         randomIndexArray[i + 2] = val
