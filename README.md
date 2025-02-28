@@ -2,7 +2,7 @@
 
 A recursive subdivision using `InstancedMesh`, with support for custom shaders and uniforms. I’ve been exploring this structure to create animations and generative artworks—like [here](https://www.instagram.com/p/DGWGRKmvG9R/?igsh=OHI5NHdtc294YjAy), [here](https://www.instagram.com/p/DGTgNLWPBhI/?igsh=OGRwNDJhcG94aHp3), and [here](https://www.instagram.com/p/DGa8BHux9p1/?igsh=MXEwMXJ2ejRzZmlxYw==). Since I couldn’t find many examples of this algorithm in Three.js, I decided to create a simple case, with help from [Michael Schlachter](https://vectorslave.com/) (thrax 🎱).
 
-[Here's](https://marioecg.github.io/three-recsub/) the example, hope it’s useful for anyone interested in exploring or building upon it!
+[Here's an example](https://marioecg.github.io/three-recsub/), hope it’s useful for anyone interested in exploring or building upon it!
 
 ## Settings
 
