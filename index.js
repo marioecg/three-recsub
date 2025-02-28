@@ -82,9 +82,7 @@ class RecSub {
         this.material = new ShaderMaterial({
             vertexShader: this.vertex,
             fragmentShader: this.fragment,
-            uniforms: {
-                uTime: { value: 0 },
-            },
+            uniforms: this.uniforms,
             depthTest: false,
             depthWrite: false,
         })
