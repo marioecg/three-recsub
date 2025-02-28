@@ -1,6 +1,6 @@
 {
     "name": "three-recsub",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Creates a recursive subdivision animation using threejs",
     "main": "index.js",
     "scripts": {
