@@ -60,7 +60,6 @@ class RecSub {
             uTime: { value: 0 },
         }
         this.uniforms = { ...baseUni, ...uniforms }
-        console.log(this.uniforms)
 
         this.time = 0
         this.noise = createNoise2D()
