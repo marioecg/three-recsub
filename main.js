@@ -1,6 +1,6 @@
 import { WebGLRenderer, PerspectiveCamera, Scene, Clock, InstancedBufferAttribute } from 'three'
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
-import { RecSub } from '../index'
+import { RecSub } from 'https://cdn.jsdelivr.net/npm/three-recsub@1.0.0/+esm'
 import { vertex, fragment } from './shaders.js'
 
 let renderer
