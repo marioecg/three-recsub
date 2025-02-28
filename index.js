@@ -6,8 +6,8 @@ import {
     InstancedMesh,
     InstancedBufferAttribute,
 } from 'three'
-import { vertex, fragment } from './shaders'
-import { createNoise2D } from 'simplex-noise'
+import { vertex, fragment } from './shaders.js'
+import { createNoise2D } from './simplex-noise.js'
 
 const clamp = (num, min, max) => (num <= min ? min : num >= max ? max : num)
 const lerp = (a, b, n) => a * (1 - n) + b * n
@@ -142,7 +142,7 @@ class RecSub {
         return this.noise(x * fr, y * fr)
     }
 
-    update = (t) => {
+    update = (t=(performance.now()/1000)) => {
         if (this.animate) {
             this.time = t * this.speed
             this.material.uniforms.uTime.value = t
