@@ -22,6 +22,7 @@ class RecSub {
         frequency: 0.5,
         vertexShader: vertex,
         fragmentShader: fragment,
+        uniforms: {},
     }
 
     constructor(opts = {}) {
@@ -53,6 +54,12 @@ class RecSub {
         // Shaders
         this.vertex = vertexShader
         this.fragment = fragmentShader
+
+        // Uniforms
+        let baseUni = {
+            uTime: { value: 0 },
+        }
+        this.uniforms = { ...baseUni, ...uniforms }
 
         this.time = 0
         this.noise = createNoise2D()
