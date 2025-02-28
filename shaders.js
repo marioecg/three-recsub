@@ -22,6 +22,7 @@ const fragment = /* glsl */ `
 #define TAU 6.283185307179586476925286766559
 
 uniform float uTime;
+uniform float uFrequency;
 
 varying float vRIndex;
 varying vec2 vUv;
@@ -35,7 +36,7 @@ void main() {
     float dir = mix(-1.0, 1.0, step(vRIndex, 0.5));
     float t = uTime * dir + vRIndex * TAU;
     float gradient = mix(vUv.x, vUv.y, step(vRIndex, 0.5));
-    float x = cos(gradient + t) * 0.5 + 0.5;
+    float x = cos(gradient * uFrequency + t) * 0.5 + 0.5;
 
     vec3 color = palette(
         x,

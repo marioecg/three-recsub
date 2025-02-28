@@ -36,6 +36,9 @@ function init() {
         frequency: 0.5,
         vertexShader: vertex,
         fragmentShader: fragment,
+        uniforms: {
+            uFrequency: { value: 1.5 },
+        },
     })
 
     // Add attributes to InstancedMesh inside subdiv
