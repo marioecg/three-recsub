@@ -35,6 +35,7 @@ class RecSub {
             frequency = 0.5,
             vertexShader,
             fragmentShader,
+            uniforms,
         } = { ...RecSub.defaultOptions, ...opts }
 
         // Assign properties
@@ -86,7 +87,6 @@ class RecSub {
             depthTest: false,
             depthWrite: false,
         })
-        console.log(this.uniforms)
 
         this.geometry = new InstancedBufferGeometry().copy(geometry)
         this.mesh = new InstancedMesh(this.geometry, this.material, this.instanceCount)
