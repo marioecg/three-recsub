@@ -37,7 +37,7 @@ function init() {
         vertexShader: vertex,
         fragmentShader: fragment,
         uniforms: {
-            uFrequency: { value: 1.5 },
+            uFrequency: { value: 1.75 },
         },
     })
 
