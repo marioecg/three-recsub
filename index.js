@@ -142,7 +142,7 @@ class RecSub {
         return this.noise(x * fr, y * fr)
     }
 
-    update = (t=(performance.now()/1000)) => {
+    update = (t = performance.now() / 1000) => {
         if (this.animate) {
             this.time = t * this.speed
             this.material.uniforms.uTime.value = t
